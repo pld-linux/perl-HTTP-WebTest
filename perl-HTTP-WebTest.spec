@@ -1,15 +1,17 @@
 #
 # Conditional build:
 %bcond_with tests	# do perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	WebTest
 Summary:	Test static and dynamic web content
+Summary(pl):	Testowanie statycznych i dynamicznych tre¶ci z WWW
 Name:		perl-HTTP-WebTest
 Version:	2.04
 Release:	1
-License:	Same as Perl itself
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	16bfb8e76bf301e788241d774cab7cee
@@ -35,6 +37,18 @@ but can be easily extended with third party plugins.
 The wt script is provided for running HTTP::WebTest from the command
 line.
 
+%description -l pl
+Ten modu³ uruchamia testy na zdalnych URL-ach zawieraj±cych
+Perla/JSP/HTML/JavaScript/itp. i generuje szczegó³owy raport z testu.
+Ten modu³ mo¿e byæ u¿ywany samodzielnie lub z funkcjonalno¶ci±
+rozszerzon± przy pomocy wtyczek. Wtyczki mog± definiowaæ rodzaje
+testów i dostarczaæ dodatkowe mo¿liwo¶ci raportowania. Ten modu³
+zawiera zestaw domy¶lnych wtyczek, ale mo¿na go ³atwo rozszerzyæ o
+zewnêtrzne wtyczki.
+
+Za³±czony jest skrypt wt do uruchamiania HTTP::WebTest z linii
+poleceñ.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
@@ -56,9 +70,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%attr(755,root,root) %{_bindir}/wt
 %{perl_vendorlib}/HTTP/*.pm
+%dir %{perl_vendorlib}/HTTP/WebTest
 %{perl_vendorlib}/HTTP/WebTest/*.pm
+%dir %{perl_vendorlib}/HTTP/WebTest/Plugin
 %{perl_vendorlib}/HTTP/WebTest/Plugin/*.pm
 %{_mandir}/man3/*
 %{_mandir}/man1/*
-%attr(755,root,root) %{_bindir}/wt
