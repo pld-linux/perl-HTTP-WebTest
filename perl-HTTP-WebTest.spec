@@ -9,7 +9,7 @@ Summary:	HTTP::WebTest - test static and dynamic web content
 Summary(pl):	HTTP::WebTest - testowanie statycznych i dynamicznych tre¶ci z WWW
 Name:		perl-HTTP-WebTest
 Version:	2.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
