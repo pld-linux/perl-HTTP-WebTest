@@ -3,8 +3,8 @@
 %bcond_with tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTTP
-%define	pnam	WebTest
+%define		pdir	HTTP
+%define		pnam	WebTest
 Summary:	HTTP::WebTest - test static and dynamic web content
 Summary(pl):	HTTP::WebTest - testowanie statycznych i dynamicznych tre¶ci z WWW
 Name:		perl-HTTP-WebTest
