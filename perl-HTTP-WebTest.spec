@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	WebTest
-Summary:	Test static and dynamic web content
-Summary(pl):	Testowanie statycznych i dynamicznych tre¶ci z WWW
+Summary:	HTTP::WebTest - test static and dynamic web content
+Summary(pl):	HTTP::WebTest - testowanie statycznych i dynamicznych tre¶ci z WWW
 Name:		perl-HTTP-WebTest
 Version:	2.04
 Release:	1
