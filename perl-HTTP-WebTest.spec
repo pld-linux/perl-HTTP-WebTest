@@ -12,6 +12,7 @@ Release:	1
 License:	Same as Perl itself
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	16bfb8e76bf301e788241d774cab7cee
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
