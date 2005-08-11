@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with tests	# do perform "make test"
+%bcond_with	tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	HTTP
