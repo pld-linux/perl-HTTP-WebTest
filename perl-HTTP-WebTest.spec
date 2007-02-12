@@ -6,7 +6,7 @@
 %define		pdir	HTTP
 %define		pnam	WebTest
 Summary:	HTTP::WebTest - test static and dynamic web content
-Summary(pl):	HTTP::WebTest - testowanie statycznych i dynamicznych tre¶ci z WWW
+Summary(pl.UTF-8):   HTTP::WebTest - testowanie statycznych i dynamicznych treÅ›ci z WWW
 Name:		perl-HTTP-WebTest
 Version:	2.04
 Release:	2
@@ -37,17 +37,17 @@ but can be easily extended with third party plugins.
 The wt script is provided for running HTTP::WebTest from the command
 line.
 
-%description -l pl
-Ten modu³ uruchamia testy na zdalnych URL-ach zawieraj±cych
-Perla/JSP/HTML/JavaScript/itp. i generuje szczegó³owy raport z testu.
-Ten modu³ mo¿e byæ u¿ywany samodzielnie lub z funkcjonalno¶ci±
-rozszerzon± przy pomocy wtyczek. Wtyczki mog± definiowaæ rodzaje
-testów i dostarczaæ dodatkowe mo¿liwo¶ci raportowania. Ten modu³
-zawiera zestaw domy¶lnych wtyczek, ale mo¿na go ³atwo rozszerzyæ o
-zewnêtrzne wtyczki.
+%description -l pl.UTF-8
+Ten moduÅ‚ uruchamia testy na zdalnych URL-ach zawierajÄ…cych
+Perla/JSP/HTML/JavaScript/itp. i generuje szczegÃ³Å‚owy raport z testu.
+Ten moduÅ‚ moÅ¼e byÄ‡ uÅ¼ywany samodzielnie lub z funkcjonalnoÅ›ciÄ…
+rozszerzonÄ… przy pomocy wtyczek. Wtyczki mogÄ… definiowaÄ‡ rodzaje
+testÃ³w i dostarczaÄ‡ dodatkowe moÅ¼liwoÅ›ci raportowania. Ten moduÅ‚
+zawiera zestaw domyÅ›lnych wtyczek, ale moÅ¼na go Å‚atwo rozszerzyÄ‡ o
+zewnÄ™trzne wtyczki.
 
-Za³±czony jest skrypt wt do uruchamiania HTTP::WebTest z linii
-poleceñ.
+ZaÅ‚Ä…czony jest skrypt wt do uruchamiania HTTP::WebTest z linii
+poleceÅ„.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
